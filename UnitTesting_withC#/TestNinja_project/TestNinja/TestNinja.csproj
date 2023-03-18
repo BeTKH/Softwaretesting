@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AB604385-369A-4A33-BFFD-3C9801C9A8C7}</ProjectGuid>
+    <ProjectGuid>{EE31C625-9E5C-4A52-8519-BA853D8633CB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>TestNinja</RootNamespace>
     <AssemblyName>TestNinja</AssemblyName>
@@ -52,6 +52,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fundamentals\Reservation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
