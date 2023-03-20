@@ -61,29 +61,14 @@ namespace NUnitTest.ParametrizedTest
 
 
         [Test]
-        public void Max_SecondArgIsGreater_ReturnSecondArg() 
+        [TestCase(2,1,1)]  // Parametrized testing
+        [TestCase(1,2,2)]
+        [TestCase(2,2,2)]
+        public void Max_WhenCalled_ReturnGreaterArge(int a, int b, int expectedResult) 
         {
-            var result = _math.Max(1,2);
+            var result = _math.Max(a,b);
 
-            Assert.That(result, Is.EqualTo(2));
-        }
-
-
-        [Test]
-        public void Max_FirstrgIsGreater_ReturnFirstArg()
-        {
-            var result = _math.Max(3, 2);
-
-            Assert.That(result, Is.EqualTo(3));
-        }
-
-
-        [Test]
-        public void Max_ArgsAreEqual_ReturnFirst()
-        {
-            var result = _math.Max(3, 3);
-
-            Assert.That(result, Is.EqualTo(3));
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
 }
