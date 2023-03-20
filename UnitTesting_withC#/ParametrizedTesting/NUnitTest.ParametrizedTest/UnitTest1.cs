@@ -5,17 +5,22 @@ namespace NUnitTest.ParametrizedTest
     [TestFixture]
     public class ParamTests
     {
-        [SetUp]
+
+        private MatH _math;
+
+        [SetUp] // write re-usable components of susequent tests in the SetUp
         public void Setup()
-        {
+        {   
+            // re-initialize for each test 
+            _math= new MatH();
         }
 
         [Test] //Test Add method
         public void Add_whenCalled_ReturnTheSum()
         {
-            MatH mathObj = new MatH();
+           
 
-            var resultSum = mathObj.Add(1,2);
+            var resultSum = _math.Add(1,2);
 
             Assert.That(resultSum, Is.EqualTo(3));
         }
@@ -23,9 +28,9 @@ namespace NUnitTest.ParametrizedTest
         [Test] // Test Sub Method
         public void Sub_WhenCalled_ReturnTheDiff() 
         {
-            MatH mathObj = new MatH();
+           
 
-            var resultDiff = mathObj.Sub(1,2);
+            var resultDiff = _math.Sub(1,2);
 
             Assert.That(resultDiff, Is.EqualTo(-1));
         }
@@ -33,9 +38,9 @@ namespace NUnitTest.ParametrizedTest
         [Test] // Test Mul Method
         public void Mul_WhenCalled_ReturnTheProd() 
         {
-            MatH mathObj = new MatH();
+            
 
-            var resultProd = mathObj.Mul(3,4);
+            var resultProd = _math.Mul(3,4);
 
             Assert.That(resultProd, Is.EqualTo(12));
         }
@@ -45,9 +50,9 @@ namespace NUnitTest.ParametrizedTest
 
         public void Div_WhenCalled_ReturnTheQuot() 
         {
-            MatH mathObj = new MatH();
+            
 
-            var resultQuot = mathObj.Div(3,4);
+            var resultQuot = _math.Div(3,4);
 
             Assert.That(resultQuot, Is.EqualTo(0.75));
             
