@@ -57,5 +57,33 @@ namespace NUnitTest.ParametrizedTest
             Assert.That(resultQuot, Is.EqualTo(0.75));
             
         }
+
+
+
+        [Test]
+        public void Max_SecondArgIsGreater_ReturnSecondArg() 
+        {
+            var result = _math.Max(1,2);
+
+            Assert.That(result, Is.EqualTo(2));
+        }
+
+
+        [Test]
+        public void Max_FirstrgIsGreater_ReturnFirstArg()
+        {
+            var result = _math.Max(3, 2);
+
+            Assert.That(result, Is.EqualTo(3));
+        }
+
+
+        [Test]
+        public void Max_ArgsAreEqual_ReturnFirst()
+        {
+            var result = _math.Max(3, 3);
+
+            Assert.That(result, Is.EqualTo(3));
+        }
     }
 }
