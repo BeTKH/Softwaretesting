@@ -47,6 +47,7 @@ namespace NUnitTest.ParametrizedTest
 
 
         [Test] // Test the Div method 
+        //[Ignore("I will comeback to this later!")] - to ignore test case  we can use [Ignore("ignore msg")]
 
         public void Div_WhenCalled_ReturnTheQuot() 
         {
