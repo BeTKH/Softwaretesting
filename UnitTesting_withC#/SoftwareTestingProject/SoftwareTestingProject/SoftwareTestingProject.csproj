@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EE31C625-9E5C-4A52-8519-BA853D8633CB}</ProjectGuid>
+    <ProjectGuid>{31E24EDE-C677-4DC3-B7F4-F236786A96E7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>TestNinja</RootNamespace>
-    <AssemblyName>TestNinja</AssemblyName>
+    <RootNamespace>SoftwareTestingProject</RootNamespace>
+    <AssemblyName>SoftwareTestingProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,7 +52,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reservation.cs" />
+    <Compile Include="IntroToTesting\ManageReservations.cs" />
+    <Compile Include="IntroToTesting\FindMax.cs" />
+    <Compile Include="IntroToTesting\MathArth.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -77,6 +79,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

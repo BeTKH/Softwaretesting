@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ParametrizedTest.Properties
+namespace SoftwareTestingProject.Properties
 {
 
 

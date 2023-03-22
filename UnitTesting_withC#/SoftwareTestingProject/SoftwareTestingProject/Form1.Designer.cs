@@ -1,4 +1,4 @@
-﻿namespace ParametrizedTest
+﻿namespace SoftwareTestingProject
 {
     partial class Form1
     {
