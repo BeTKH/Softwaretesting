@@ -4,10 +4,11 @@ using System;
 using SoftwareTestingProject.Mocking;
 using Assert = NUnit.Framework.Assert;
 
-namespace UnitTestEmployee
+namespace TestsNUnit.MockingTests.EmployeeMock
 {
     [TestClass]
     public class EmployeeUnitTest
+
     {
         [TestMethod]//T1
         public void TestEmployeeObj()
@@ -16,7 +17,7 @@ namespace UnitTestEmployee
             Address addr_ = new Address("35th Str", "Fargo", "ND", "58104", "2900");
             Employee mockEmp = Mock.Create<Employee>("John", "Schmidt", "123 - 234 - 2345", addr_);
 
-            
+
 
             Assert.AreEqual("John", mockEmp.FirstName);
             Assert.AreEqual("Schmidt", mockEmp.LastName);
@@ -50,7 +51,7 @@ namespace UnitTestEmployee
         }
 
 
-       
+
 
         [TestMethod] //T5
         public void TestSalariedEmployeeObj()
@@ -285,7 +286,7 @@ namespace UnitTestEmployee
 
         }
 
-    
+
 
         [TestMethod] //T22
         public void BasePlusComissionEmployeeToString()
