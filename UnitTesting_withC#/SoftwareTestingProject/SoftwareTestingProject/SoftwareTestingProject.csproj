@@ -57,6 +57,12 @@
     <Compile Include="IntroToTesting\ManageReservations.cs" />
     <Compile Include="IntroToTesting\FindMax.cs" />
     <Compile Include="IntroToTesting\MathArth.cs" />
+    <Compile Include="Mocking\Address.cs" />
+    <Compile Include="Mocking\BasePlusCommissionEmployee.cs" />
+    <Compile Include="Mocking\CommissionEmployee.cs" />
+    <Compile Include="Mocking\Employee.cs" />
+    <Compile Include="Mocking\HourlyEmployee.cs" />
+    <Compile Include="Mocking\SalariedEmployee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Exercises\FizzBuzz.cs" />
